@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Петербург</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="mask"></div>
+	<nav class="burger__nav">
+		<a class="burger__link" href="#">Журнал Петербурга</a>
+		<nav class="nav__menu">
+			<a class="nav__link menu" href="#">Места города</a>
+			<a class="nav__link menu" href="#">Достопримечательности</a>
+			<a class="nav__link menu" href="#">Маршруты</a>
+		</nav>
+	</nav>
+	<div class="page">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a class="logo" href="index.html">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<nav class="nav">
+						<a class="nav__link" href="#">Места города</a>
+						<a class="nav__link" href="#">Достопримечательности</a>
+						<a class="nav__link" href="#">Маршруты</a>
+					</nav>
+					<a class="btn-blue" href="index.html">Журнал Петербурга</a>
+					<span class="burger">
+						<span></span>
+					</span>
+				</div>
+			</div>
+		</header>
+		<section class="section-catalog">
+			<div class="container">
+				<div class="catalog__inner">
+					<div class="criterias left-bar">
+						<p class="criterias__title">Выбрать по критериям:</p>
+						<div class="criterias__container">
+							<p class="criteria__title">Цена</p>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="price" id="without_prepayment">
+									<label class="radio__lable" name="price" for="without_prepayment">Без предоплаты</label>
+								</div>
+								<p class="criteria__number">(4)</p>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="criterias__container">
+							<p class="criteria__title">Особенности</p>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="features" id="center">
+									<label class="radio__lable" name="features" for="center">В центре</label>
+								</div>
+								<p class="criteria__number">(4)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="features" id="pets">
+									<label class="radio__lable" name="features" for="pets">Можно с питомцами</label>
+								</div>
+								<p class="criteria__number">(22)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="features" id="disabled_people">
+									<label class="radio__lable" name="features" for="disabled_people">Для гостей с ограниченными возможностями</label>
+								</div>
+								<p class="criteria__number">(285)</p>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="criterias__container">
+							<p class="criteria__title">Количество звезд</p>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="star" id="star-0">
+									<label class="radio__lable" name="star" for="star-0">Без звезд</label>
+								</div>
+								<p class="criteria__number">(4)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="star" id="star-1">
+									<label class="radio__lable" name="star" for="star-1"><img class="star-icon" src="img/star-icon.svg" alt=""></label>
+								</div>
+								<p class="criteria__number">(4)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="star" id="star-2">
+									<label class="radio__lable" name="star" for="star-2"><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""></label>
+								</div>
+								<p class="criteria__number">(22)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="star" id="star-3">
+									<label class="radio__lable" name="star" for="star-3"><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""></label>
+								</div>
+								<p class="criteria__number">(285)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="star" id="star-4">
+									<label class="radio__lable" name="star" for="star-4"><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""></label>
+								</div>
+								<p class="criteria__number">(304)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="star" id="star-5">
+									<label class="radio__lable" name="star" for="star-5"><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""><img class="star-icon" src="img/star-icon.svg" alt=""></label>
+								</div>
+								<p class="criteria__number">(156)</p>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="criterias__container">
+							<p class="criteria__title">Питание</p>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="meal" id="breakfast-included">
+									<label class="radio__lable" name="meal" for="breakfast-included">Завтрак</label>
+								</div>
+								<p class="criteria__number">(4)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="meal" id="breakfast-lunch-dinner">
+									<label class="radio__lable" name="meal" for="breakfast-lunch-dinner">Завтрак, обед, ужин</label>
+								</div>
+								<p class="criteria__number">(22)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="meal" id="all-inclusive">
+									<label class="radio__lable" name="meal" for="all-inclusive">Все включено</label>
+								</div>
+								<p class="criteria__number">(285)</p>
+							</div>
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="meal" id="without-meals">
+									<label class="radio__lable" name="meal" for="without-meals">Без питания</label>
+								</div>
+								<p class="criteria__number">(304)</p>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="criterias__container">
+							<div class="criterias__box">
+								<div class="radio">
+									<input class="radio__input" type="radio" name="booking" id="available">
+									<label class="radio__lable" name="booking" for="available">Доступно для бронирования</label>
+								</div>
+								<p class="criteria__number">(4)</p>
+							</div>
+						</div>
+					</div>
+					<div class="right-bar">
+						<div class="catalog-top">
+							<div class="serch__info">
+								<div class="serch__info--location">
+									<div class="serch__info__inner">
+										<img class="change-icon" src="img/change-icon.svg" alt="">
+										<p class="serch__info__title">Санкт-Петербург, 2 взрослых, 1 ночь</p>
+									</div>
+								</div>
+								<div class="serch__info--date">
+									<div class="line-vertical-sorting"></div>
+									<div class="serch__info__inner info-date">
+										<p class="serch__info__title">Заезд</p>
+										<p class="serch__info__text date">сб, 30 апр</p>
+									</div>
+									<div class="line-vertical-sorting"></div>
+									<div class="serch__info__inner info-date">
+										<p class="serch__info__title">Отъезд</p>
+										<p class="serch__info__text date">вс, 1 мая</p>
+									</div>
+								</div>
+							</div>
+							<div class="serch__btn">
+								<a class="btn-blue-big" href="#">Найти отель</a>
+							</div>
+						</div>
+						<div class="seche__title__container">
+							<h1 class="seche__title">Найдено 435 вариантов</h1>
+							<img class="filter-icon" src="img/filter-icon.svg" alt="">
+						</div>
+						<div class="sorting">
+							<nav class="sorting__inner">
+								<p class="sorting__title">Сортировать по</p>
+								<div class="sorting__container">
+									<li class="sorting__item">
+										<button class="sorting__btn" type="button" data-filter="all">Звезды</button>
+									</li>
+									<li class="sorting__item">
+										<button class="sorting__btn" type="button" data-filter="alcool">Название</button>
+									</li>
+									<li class="sorting__item">
+										<button class="sorting__btn" type="button" data-filter="limonade">Отзывы</button>
+									</li>
+								</div>
+								<div class="triangle-left"></div>
+							</nav>
+							<a href="#">
+								<img class="map-icon" src="img/map-icon.svg" alt="">
+							</a>
+						</div>
+						<div class="catalog">
+							<div class="catalog__item">
+								<div class="item__inner">
+									<a href="#">
+										<div class="item__img">
+											<img src="img/catalog/01.png" alt="">
+										</div>
+									</a>
+									<div class="item__info">
+										<div class="item__info__inner">
+											<div>
+												<a href="#">
+													<h2 class="item__title">Нео Классик Академия</h2>
+												</a>
+												<div class="rating">
+													<div class="rating__stars">
+														<p class="rating__number">9,2</p>
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+													</div>
+													<p class="review__text d-none">422 отзыва</p>
+												</div>
+												<a href="#">
+													<div class="adress__container">
+														<p class="adress__text">1 Karavannaya Ulitsa</p>
+														<p class="distance__text">1 км от центра</p>
+													</div>
+												</a>
+											</div>
+											<div class="advantages__container">
+												<span class="advantages clean">Чистота</span>
+												<span class="advantages center">В центре города</span>
+												<span class="advantages breakfast">Завтрак включен</span>
+											</div>
+											<div class="item__article">
+												<p class="item__article__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+											</div>
+										</div>
+										<div class="line-vertical"></div>
+										<div class="item__price">
+										 	<div>
+										 		<div class="item__price__container">
+											 		<p class="price__title">Цена за 3 ночи:</p>
+											 		<p class="price__price">7 560 руб.</p>
+										 		</div>
+										 		<p class="price__tax d-none">Включая налоги и сборы*</p>
+										 	</div>
+										 	<a class="btn-blue-catalog" href="#">Смотреть номера</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<div class="item__inner">
+									<a href="hotel-page.html">
+										<div class="item__img">
+											<img src="img/catalog/02.png" alt="">
+										</div>
+									</a>
+									<div class="item__info">
+										<div class="item__info__inner">
+											<div>
+												<a href="hotel-page.html">
+													<h2 class="item__title">Травелто Репина</h2>
+												</a>
+												<div class="rating">
+													<div class="rating__stars">
+														<p class="rating__number">8,0</p>
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+													</div>
+													<p class="review__text d-none">1 091 отзыв</p>
+												</div>
+												<a href="#">
+													<div class="adress__container">
+														<p class="adress__text">1-я Линия В.О, д. 34</p>
+														<p class="distance__text">1 км от центра</p>
+													</div>
+												</a>
+											</div>
+											<div class="advantages__container">
+												<span class="advantages clean">Чистота</span>
+												<span class="advantages prepayment">Предоплата не требуется</span>
+											</div>
+											<div class="item__article">
+												<p class="item__article__text">
+													Отель «Травелто Репина» удобно расположен в Василеостровском районе Санкт-Петербурга, в 1,4 км отстадиона «Петровский», в 2,5 км от часовни Святой Ксении Блаженной и в 2,6 км от Мариинского театра. Вэтом 3-звездочном отеле можно воспользоваться услугами консьержа. К услугам гостей круглосуточная стойка регистрации, бесплатный Wi-Fi и общая кухня. По запросу организуется трансфер от/до аэропорта.
+												</p>
+												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+											</div>
+										</div>
+										<div class="line-vertical"></div>
+										<div class="item__price">
+										 	<div>
+										 		<div class="item__price__container">
+											 		<p class="price__title">Цена за 3 ночи:</p>
+											 		<p class="price__price">7 560 руб.</p>
+										 		</div>
+										 		<p class="price__tax d-none">Включая налоги и сборы*</p>
+										 	</div>
+										 	<a class="btn-blue-catalog" href="#">Смотреть номера</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<div class="item__inner">
+									<a href="#">
+										<div class="item__img">
+											<img src="img/catalog/03.png" alt="">
+										</div>
+									</a>
+									<div class="item__info">
+										<div class="item__info__inner">
+											<div>
+												<a href="#">
+													<h2 class="item__title">Wars hostel</h2>
+												</a>
+												<div class="rating">
+													<div class="rating__stars">
+														<p class="rating__number">7,8</p>
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+													</div>
+													<p class="review__text d-none">231 отзыв</p>
+												</div>
+												<a href="#">
+													<div class="adress__container">
+														<p class="adress__text">1/10 Birzhevoy Pereulok</p>
+														<p class="distance__text">1 км от центра</p>
+													</div>
+												</a>
+											</div>
+											<div class="advantages__container">
+												<span class="advantages clean">Чистота</span>
+											</div>
+											<div class="item__article">
+												<p class="item__article__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+											</div>
+										</div>
+										<div class="line-vertical"></div>
+										<div class="item__price">
+										 	<div>
+										 		<div class="item__price__container">
+											 		<p class="price__title">Цена за 3 ночи:</p>
+											 		<p class="price__price">7 560 руб.</p>
+										 		</div>
+										 		<p class="price__tax d-none">Включая налоги и сборы*</p>
+										 	</div>
+										 	<a class="btn-blue-catalog" href="#">Смотреть номера</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<div class="item__inner">
+									<a href="#">
+										<div class="item__img">
+											<img src="img/catalog/04.png" alt="">
+										</div>
+									</a>
+									<div class="item__info">
+										<div class="item__info__inner">
+											<div>
+												<a href="#">
+													<h2 class="item__title">Хостел ДВА МЕДВЕДЯ</h2>
+												</a>
+												<div class="rating">
+													<div class="rating__stars">
+														<p class="rating__number">8,3</p>
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+													</div>
+													<p class="review__text d-none">123 отзыва</p>
+												</div>
+												<a href="#">
+													<div class="adress__container">
+														<p class="adress__text">10 Zagorodnyy Prospekt</p>
+														<p class="distance__text">1 км от центра</p>
+													</div>
+												</a>
+											</div>
+											<div class="advantages__container">
+												<span class="advantages clean">Чистота</span>
+												<span class="advantages staff">Персонал</span>
+												<span class="advantages breakfast">Завтрак включен</span>
+											</div>
+											<div class="item__article">
+												<p class="item__article__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+											</div>
+										</div>
+										<div class="line-vertical"></div>
+										<div class="item__price">
+										 	<div>
+										 		<div class="item__price__container">
+											 		<p class="price__title">Цена за 3 ночи:</p>
+											 		<p class="price__price">7 560 руб.</p>
+										 		</div>
+										 		<p class="price__tax d-none">Включая налоги и сборы*</p>
+										 	</div>
+										 	<a class="btn-blue-catalog" href="#">Смотреть номера</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<div class="item__inner">
+									<a href="#">
+										<div class="item__img">
+											<img src="img/catalog/05.png" alt="">
+										</div>
+									</a>
+									<div class="item__info">
+										<div class="item__info__inner">
+											<div>
+												<a href="#">
+													<h2 class="item__title">Отель Слонъ</h2>
+												</a>
+												<div class="rating">
+													<div class="rating__stars">
+														<p class="rating__number">8,7</p>
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+													</div>
+													<p class="review__text d-none">228 отзывов</p>
+												</div>
+												<a href="#">
+													<div class="adress__container">
+														<p class="adress__text">10-ая Советская д. 11 лит. Б</p>
+														<p class="distance__text">1,2 км от центра</p>
+													</div>
+												</a>
+											</div>
+											<div class="advantages__container">
+												<span class="advantages breakfast">Завтрак включен</span>
+											</div>
+											<div class="item__article">
+												<p class="item__article__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+											</div>
+										</div>
+										<div class="line-vertical"></div>
+										<div class="item__price">
+										 	<div>
+										 		<div class="item__price__container">
+											 		<p class="price__title">Цена за 3 ночи:</p>
+											 		<p class="price__price">7 560 руб.</p>
+										 		</div>
+										 		<p class="price__tax d-none">Включая налоги и сборы*</p>
+										 	</div>
+										 	<a class="btn-blue-catalog" href="#">Смотреть номера</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<div class="item__inner">
+									<a href="#">
+										<div class="item__img">
+											<img src="img/catalog/06.png" alt="">
+										</div>
+									</a>
+									<div class="item__info">
+										<div class="item__info__inner">
+											<div>
+												<a href="#">
+													<h2 class="item__title">Гостевой дом у Московского вокзала</h2>
+												</a>
+												<div class="rating">
+													<div class="rating__stars">
+														<p class="rating__number">7,2</p>
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+														<img class="star-icon-yellow" src="img/star-icon-yellow.svg" alt="">
+													</div>
+													<p class="review__text d-none">71 отзыв</p>
+												</div>
+												<a href="#">
+													<div class="adress__container">
+														<p class="adress__text">11 Grecheskiy Prospekt</p>
+														<p class="distance__text">0,8 км от центра</p>
+													</div>
+												</a>
+											</div>
+											<div class="advantages__container">
+												<span class="advantages breakfast">Завтрак включен</span>
+												<span class="advantages prepayment">Предоплата не требуется</span>
+											</div>
+											<div class="item__article">
+												<p class="item__article__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+												</p>
+												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+											</div>
+										</div>
+										<div class="line-vertical"></div>
+										<div class="item__price">
+										 	<div>
+										 		<div class="item__price__container">
+											 		<p class="price__title">Цена за 3 ночи:</p>
+											 		<p class="price__price">7 560 руб.</p>
+										 		</div>
+										 		<p class="price__tax d-none">Включая налоги и сборы*</p>
+										 	</div>
+										 	<a class="btn-blue-catalog" href="#">Смотреть номера</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__btn">
+							<a class="btn-blue-big center" href="#">Показать еще</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__container">
+					<a class="logo" href="index.html">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<nav class="nav">
+						<a class="nav__link" href="#">Места города</a>
+						<a class="nav__link" href="#">Достопримечательности</a>
+						<a class="nav__link" href="#">Маршруты</a>
+					</nav>
+					<nav class="nav__footer">
+						<a class="footer__link" href="#">Зарегистрировать свой объект</a>
+						<a class="footer__link" href="#">Правила и условия</a>
+						<a class="footer__link " href="#">Связаться с нами</a>
+						<a class="footer__link" href="#">О Петербург.ru</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+  	</div>
+
+  	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
