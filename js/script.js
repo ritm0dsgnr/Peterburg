@@ -16,7 +16,7 @@ $(".filter-icon").on("click", function(event) {
 });
 
 
-/*$(".room__title").on("click", function(event) {
+$(".room__title, .room_img").on("click", function(event) {
     $(".popup__about-room").toggleClass("active");
     $("body").toggleClass("lock");
     $(".mask").toggleClass("active");
@@ -25,7 +25,7 @@ $(".close_icon").on("click", function(event) {
     $(".popup__about-room").removeClass("active");
     $("body").removeClass("lock");
     $(".mask").removeClass("active");
-});*/
+});
 
 
 $(".description__title").click(function(event) {
@@ -34,3 +34,17 @@ $(".description__title").click(function(event) {
     $(this).toggleClass('active').next().slideToggle(300);
     $(".arrow").toggleClass("arrow-bottom");
 });
+
+
+$(".serch__info__inner.location").click(function(event) {
+    $(".serch__info__change").toggleClass("active");
+});
+
+$(".info-date.in").click(function(event) {
+    $(".calendar.in").toggleClass("active");
+});
+
+$(".info-date.out").click(function(event) {
+    $(".calendar.out").toggleClass("active");
+});
+

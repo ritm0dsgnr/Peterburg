@@ -12,9 +12,9 @@
 	<nav class="burger__nav">
 		<a class="burger__link" href="#">Журнал Петербурга</a>
 		<nav class="nav__menu">
-			<a class="nav__link menu" href="#">Места города</a>
-			<a class="nav__link menu" href="#">Достопримечательности</a>
-			<a class="nav__link menu" href="#">Маршруты</a>
+			<a class="nav__link menu" href="places_city.html">Места города</a>
+			<a class="nav__link menu" href="attractions.html">Достопримечательности</a>
+			<a class="nav__link menu" href="routes.html">Маршруты</a>
 		</nav>
 	</nav>
 	<div class="page">
@@ -25,9 +25,9 @@
 						<img src="img/logo.svg" alt="">
 					</a>
 					<nav class="nav">
-						<a class="nav__link" href="#">Места города</a>
-						<a class="nav__link" href="#">Достопримечательности</a>
-						<a class="nav__link" href="#">Маршруты</a>
+						<a class="nav__link" href="places_city.html">Места города</a>
+						<a class="nav__link" href="attractions.html">Достопримечательности</a>
+						<a class="nav__link" href="routes.html">Маршруты</a>
 					</nav>
 					<a class="btn-blue" href="index.html">Журнал Петербурга</a>
 					<span class="burger">
@@ -183,21 +183,181 @@
 						<div class="catalog-top">
 							<div class="serch__info">
 								<div class="serch__info--location">
-									<div class="serch__info__inner">
+									<div class="serch__info__inner location">
 										<img class="change-icon" src="img/change-icon.svg" alt="">
 										<p class="serch__info__title">Санкт-Петербург, 2 взрослых, 1 ночь</p>
+									</div>
+									<div class="serch__info__change">
+										<div class="serch__info__change__content">
+											<div class="serch__info__change__inner">
+												<div class="radio">
+													<input class="radio__input" type="radio" name="location" id="peterburg">
+													<label class="location__lable" name="location" for="peterburg">Санкт-Петербург</label>
+												</div>
+											</div>
+											<div class="serch__info__change__inner">
+												<div class="radio">
+													<input class="radio__input" type="radio" name="location" id="len-obl">
+													<label class="location__lable" name="location" for="len-obl">Ленинградская обл.</label>
+												</div>
+											</div>
+										</div>
+										<div class="serch__info__change__content">
+											<div class="serch__info__change__inner">
+												<p class="serch__info__change__text">Взрослые</p>
+												<div class="counter__wrapper">
+													<div class="control__item" data-action="plus">+</div>
+													<div class="control__current" data-counter>1</div>
+													<div class="control__item" data-action="minus">-</div>
+												</div>
+											</div>
+											<div class="serch__info__change__inner">
+												<p class="serch__info__change__text">Дети</p>
+												<div class="counter__wrapper">
+													<div class="control__item" data-action="plus">+</div>
+													<div class="control__current" data-counter>1</div>
+													<div class="control__item" data-action="minus">-</div>
+												</div>
+											</div>
+										</div>
+										<div class="serch__info__change__content">
+											<div class="serch__info__change__inner">
+												<p class="serch__info__change__text">Ночи</p>
+												<input class="guests__counter" type="text" name="guests">
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="serch__info--date">
 									<div class="line-vertical-sorting"></div>
-									<div class="serch__info__inner info-date">
+									<div class="serch__info__inner info-date in">
 										<p class="serch__info__title">Заезд</p>
 										<p class="serch__info__text date">сб, 30 апр</p>
+										<div class="background calendar in">
+											<p class="mounth__text">Июнь</p>
+											<div class="calendar__container">
+												<span class="days__week">
+													<p>Пн</p>
+												</span>
+												<span class="days__week">
+													<p>Вт</p>
+												</span>
+												<span class="days__week">
+													<p>Ср</p>
+												</span>
+												<span class="days__week">
+													<p>Чт</p>
+												</span>
+												<span class="days__week">
+													<p>Пт</p>
+												</span>
+												<span class="days__week">
+													<p>Сб</p>
+												</span>
+												<span class="days__week">
+													<p>Вс</p>
+												</span>
+											</div>
+											<div class="calendar__container">
+												<div class="days__none"></div>
+												<div class="days__none"></div>
+												<div class="calendar__days">1</div>
+												<div class="calendar__days">2</div>
+												<div class="calendar__days">3</div>
+												<div class="calendar__days">4</div>
+												<div class="calendar__days">5</div>
+												<div class="calendar__days">6</div>
+												<div class="calendar__days">7</div>
+												<div class="calendar__days">8</div>
+												<div class="calendar__days">9</div>
+												<div class="calendar__days">10</div>
+												<div class="calendar__days">11</div>
+												<div class="calendar__days">12</div>
+												<div class="calendar__days">13</div>
+												<div class="calendar__days">14</div>
+												<div class="calendar__days">15</div>
+												<div class="calendar__days">16</div>
+												<div class="calendar__days">17</div>
+												<div class="calendar__days">18</div>
+												<div class="calendar__days">19</div>
+												<div class="calendar__days">20</div>
+												<div class="calendar__days">21</div>
+												<div class="calendar__days">22</div>
+												<div class="calendar__days">23</div>
+												<div class="calendar__days">24</div>
+												<div class="calendar__days">25</div>
+												<div class="calendar__days">26</div>
+												<div class="calendar__days">27</div>
+												<div class="calendar__days">28</div>
+												<div class="calendar__days">29</div>
+												<div class="calendar__days">30</div>
+											</div>
+										</div>
 									</div>
 									<div class="line-vertical-sorting"></div>
-									<div class="serch__info__inner info-date">
+									<div class="serch__info__inner info-date out">
 										<p class="serch__info__title">Отъезд</p>
 										<p class="serch__info__text date">вс, 1 мая</p>
+										<div class="background calendar out">
+											<p class="mounth__text">Июль</p>
+											<div class="calendar__container">
+												<span class="days__week">
+													<p>Пн</p>
+												</span>
+												<span class="days__week">
+													<p>Вт</p>
+												</span>
+												<span class="days__week">
+													<p>Ср</p>
+												</span>
+												<span class="days__week">
+													<p>Чт</p>
+												</span>
+												<span class="days__week">
+													<p>Пт</p>
+												</span>
+												<span class="days__week">
+													<p>Сб</p>
+												</span>
+												<span class="days__week">
+													<p>Вс</p>
+												</span>
+											</div>
+											<div class="calendar__container">
+												<div class="days__none"></div>
+												<div class="days__none"></div>
+												<div class="calendar__days">1</div>
+												<div class="calendar__days">2</div>
+												<div class="calendar__days">3</div>
+												<div class="calendar__days">4</div>
+												<div class="calendar__days">5</div>
+												<div class="calendar__days">6</div>
+												<div class="calendar__days">7</div>
+												<div class="calendar__days">8</div>
+												<div class="calendar__days">9</div>
+												<div class="calendar__days">10</div>
+												<div class="calendar__days">11</div>
+												<div class="calendar__days">12</div>
+												<div class="calendar__days">13</div>
+												<div class="calendar__days">14</div>
+												<div class="calendar__days">15</div>
+												<div class="calendar__days">16</div>
+												<div class="calendar__days">17</div>
+												<div class="calendar__days">18</div>
+												<div class="calendar__days">19</div>
+												<div class="calendar__days">20</div>
+												<div class="calendar__days">21</div>
+												<div class="calendar__days">22</div>
+												<div class="calendar__days">23</div>
+												<div class="calendar__days">24</div>
+												<div class="calendar__days">25</div>
+												<div class="calendar__days">26</div>
+												<div class="calendar__days">27</div>
+												<div class="calendar__days">28</div>
+												<div class="calendar__days">29</div>
+												<div class="calendar__days">30</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -214,13 +374,13 @@
 								<p class="sorting__title">Сортировать по</p>
 								<div class="sorting__container">
 									<li class="sorting__item">
-										<button class="sorting__btn" type="button" data-filter="all">Звезды</button>
+										<button class="sorting__btn" type="button">Звезды</button>
 									</li>
 									<li class="sorting__item">
-										<button class="sorting__btn" type="button" data-filter="alcool">Название</button>
+										<button class="sorting__btn" type="button">Название</button>
 									</li>
 									<li class="sorting__item">
-										<button class="sorting__btn" type="button" data-filter="limonade">Отзывы</button>
+										<button class="sorting__btn" type="button">Отзывы</button>
 									</li>
 								</div>
 								<div class="triangle-left"></div>
@@ -268,7 +428,7 @@
 												<p class="item__article__text">
 													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 												</p>
-												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+												<a class="item__article__button" href="#">Читать далее</a>
 											</div>
 										</div>
 										<div class="line-vertical"></div>
@@ -322,7 +482,7 @@
 												<p class="item__article__text">
 													Отель «Травелто Репина» удобно расположен в Василеостровском районе Санкт-Петербурга, в 1,4 км отстадиона «Петровский», в 2,5 км от часовни Святой Ксении Блаженной и в 2,6 км от Мариинского театра. Вэтом 3-звездочном отеле можно воспользоваться услугами консьержа. К услугам гостей круглосуточная стойка регистрации, бесплатный Wi-Fi и общая кухня. По запросу организуется трансфер от/до аэропорта.
 												</p>
-												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+												<a class="item__article__button" href="#">Читать далее</a>
 											</div>
 										</div>
 										<div class="line-vertical"></div>
@@ -375,7 +535,7 @@
 												<p class="item__article__text">
 													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 												</p>
-												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+												<a class="item__article__button" href="#">Читать далее</a>
 											</div>
 										</div>
 										<div class="line-vertical"></div>
@@ -430,7 +590,7 @@
 												<p class="item__article__text">
 													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 												</p>
-												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+												<a class="item__article__button" href="#">Читать далее</a>
 											</div>
 										</div>
 										<div class="line-vertical"></div>
@@ -483,7 +643,7 @@
 												<p class="item__article__text">
 													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 												</p>
-												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+												<a class="item__article__button" href="#">Читать далее</a>
 											</div>
 										</div>
 										<div class="line-vertical"></div>
@@ -537,7 +697,7 @@
 												<p class="item__article__text">
 													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 												</p>
-												<!-- <a class="item__article__button" href="#">Читать далее</a> -->
+												<a class="item__article__button" href="#">Читать далее</a>
 											</div>
 										</div>
 										<div class="line-vertical"></div>
@@ -562,16 +722,18 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__container">
+  	</div>
+  	<footer class="footer">
+		<div class="container">
+			<div class="footer__container">
+				<div class="flex__content">
 					<a class="logo" href="index.html">
 						<img src="img/logo.svg" alt="">
 					</a>
 					<nav class="nav">
-						<a class="nav__link" href="#">Места города</a>
-						<a class="nav__link" href="#">Достопримечательности</a>
-						<a class="nav__link" href="#">Маршруты</a>
+						<a class="nav__link" href="places_city.html">Места города</a>
+						<a class="nav__link" href="attractions.html">Достопримечательности</a>
+						<a class="nav__link" href="routes.html">Маршруты</a>
 					</nav>
 					<nav class="nav__footer">
 						<a class="footer__link" href="#">Зарегистрировать свой объект</a>
@@ -581,8 +743,8 @@
 					</nav>
 				</div>
 			</div>
-		</footer>
-  	</div>
+		</div>
+	</footer>
 
   	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
